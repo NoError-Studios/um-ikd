@@ -1,7 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
-
+.disp {
+	display: none;
+}
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, video {
@@ -12,6 +14,8 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+
     #video {
 
     position: fixed;
@@ -141,7 +145,7 @@
   text-transform: uppercase;
   font-weight: 900;
   font-style: italic;
-  color: orangered;
+  color: white;
   font-size: 120px;
   height: 250px; /* all text-shadows */
   margin-top: -40px; /* bump up */
@@ -391,6 +395,8 @@
 		top: -1em;
 		vertical-align: middle;
 		width: 90%;
+		max-width: 100%;
+    overflow-x: hidden;
 	}
 	
 		#header h1 {
@@ -398,7 +404,10 @@
 			font-weight: 900;
 			letter-spacing: -0.035em;
 			line-height: 1em;
+			cursor: pointer;
 		}
+
+	
 
 		.features-section {
    
@@ -520,6 +529,8 @@
 					-ms-animation-delay: 3s;
 					animation-delay: 3s;
 				}
+
+			
 
 				#header nav li:nth-child(4) {
 					-moz-animation-delay: 3.25s;
@@ -990,6 +1001,60 @@
 }
 /*custom added shit*/
 
-
+  
 
 /*wtf is this shit*/
+
+@media only screen and (max-width: 700px) {
+
+#header{
+	overflow-x: hidden;
+}
+
+	.disp {
+		display: block;
+	}
+
+	.features-blocks h4 {
+		font-size: 30px;
+}
+
+.features-blocks {
+		border: 2px solid #121212;
+		background: #121212;
+		width: 250px;
+		height: 180px;
+		border-radius: 50px;
+		transition: 0.1s ease;
+		margin: auto;
+		align-items: center;
+		justify-content: center;
+}
+
+.features-blocks2 {
+		border: 2px solid #121212;
+		background: #121212;
+		width: 250px;
+		height: 180px;
+		border-radius: 50px;
+		transition: 0.1s ease;
+		margin: auto;
+		align-items: center;
+		justify-content: center;
+}
+
+
+.features-blocks1 {
+		border: 2px solid #121212;
+		background: #121212;
+		width: 250px;
+		height: 180px;
+		border-radius: 50px;
+		transition: 0.1s ease;
+		margin: auto;
+		align-items: center;
+	
+}
+
+
+}
